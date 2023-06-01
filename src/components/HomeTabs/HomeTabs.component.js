@@ -39,6 +39,8 @@ const HomeTabs = () => {
           onChange={handleChange} 
           aria-label="basic tabs example" 
           sx={{ fontWeight: 'solid' }}
+          scrollButtons="auto"
+          variant="scrollable"
         >
           <Tab label={<Typography variant="h6" fontWeight="bold">Gringos Schedule</Typography>} {...a11yProps(0)} />
           <Tab label={<Typography variant="h6" fontWeight="bold">Table</Typography>} {...a11yProps(1)} />
