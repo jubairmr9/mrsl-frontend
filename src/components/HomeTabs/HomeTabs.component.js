@@ -20,7 +20,8 @@ import { Container, TabPanel, a11yProps } from './HomeTabs.styled';
 const HomeTabs = () => {
   const [value, setValue] = useState(0);
   const { data, isLoading, isError } = useQuery('fetchData', fetchData, {
-    refetchOnMount: true, // Trigger a refetch of the data when the component mounts
+    staleTime: 60000,
+    refetchOnMount: true,
   });
 
   if (isLoading || isError) {
