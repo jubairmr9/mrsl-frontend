@@ -46,7 +46,13 @@ const ResultTable = ({ results }) => {
               <StyledTableCell align="center">{`${result.homeScore}-${result.awayScore}`}</StyledTableCell>
               <StyledTableCell align="center">{result.awayTeam}</StyledTableCell>
               <StyledTableCell align="center">{result.matchweek}</StyledTableCell>
-              <StyledTableCell align="center">{result.location}</StyledTableCell>
+              <StyledTableCell align="center">
+                {
+                  result.googleMapLocation
+                  ? <a href={result.googleMapLocation} target="_blank" rel="noopener noreferrer">{result.location}</a>
+                  : result.location
+                }
+              </StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

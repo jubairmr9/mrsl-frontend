@@ -31,7 +31,13 @@ export const Row = (props) => {
         <StyledTableCell align="center">{`${row.homeScore}-${row.awayScore}`}</StyledTableCell>
         <StyledTableCell align="center">{row.awayTeam}</StyledTableCell>
         <StyledTableCell align="center">{row.matchweek}</StyledTableCell>
-        <StyledTableCell align="center">{row.location}</StyledTableCell>
+        <StyledTableCell align="center">
+          {
+            row.googleMapLocation
+            ? <a href={row.googleMapLocation} target="_blank" rel="noopener noreferrer">{row.location}</a>
+            : row.location
+          }
+        </StyledTableCell>
       </StyledTableRow>
       <StyledTableRow>
         <StyledTableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={8}>

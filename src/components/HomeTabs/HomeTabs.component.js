@@ -49,16 +49,21 @@ const HomeTabs = () => {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        {results && <GringosSchedule results={results} />}
+        <div>
+          {results && <GringosSchedule results={results} />}
+        </div>
+        <div style={{ paddingTop: '10px' }}>
+          <Typography variant="body1" style={{ fontStyle: "italic", fontWeight: "solid" }}>
+            ** Game is on a Wednesday - July 5th
+          </Typography>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Container container spacing={2}>
           <Grid item xs={12} md={6}>
-            {/* Component 1 (PointsTable) */}
             {results && <PointsTable results={results} />}
           </Grid>
           <Grid item xs={12} md={6}>
-            {/* Component 2 (ScorersTable) */}
             {scorers && <ScorersTable scorers={scorers} />}
           </Grid>
         </Container>
