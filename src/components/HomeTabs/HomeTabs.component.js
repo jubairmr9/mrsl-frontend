@@ -19,10 +19,7 @@ import { Container, TabPanel, a11yProps } from './HomeTabs.styled';
 
 const HomeTabs = () => {
   const [value, setValue] = useState(0);
-  const { data, isLoading, isError } = useQuery('fetchData', fetchData, {
-    staleTime: 60000,
-    refetchOnMount: true,
-  });
+  const { data, isLoading, isError } = useQuery('fetchData', fetchData);
 
   if (isLoading || isError) {
     return <div>{isLoading ? 'Loading...' : 'Error while fetching data'}</div>;
