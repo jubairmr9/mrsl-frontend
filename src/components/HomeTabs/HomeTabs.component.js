@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import CircularProgress from '@mui/material/CircularProgress';
 import Grid from '@mui/material/Grid';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import Typography from '@mui/material/Typography';
 
-import ResultsTable from "../ResultsTable/ResultsTable.component";
-import PointsTable from '../PointsTable/PointsTable.component';
-import ScorersTable from '../ScorersTable/ScorersTable.component';
 import GringosSchedule from '../GringosSchedule/GringosSchedule.component';
+import PointsTable from '../PointsTable/PointsTable.component';
+import ResultsTable from "../ResultsTable/ResultsTable.component";
+import ScorersTable from '../ScorersTable/ScorersTable.component';
 import TeamCard from '../TeamCard/TeamCard.comonent';
 
 import { fetchData } from './HomeTabs.utils';
@@ -22,7 +23,13 @@ const HomeTabs = () => {
   const { data, isLoading, isError } = useQuery('fetchData', fetchData);
 
   if (isLoading || isError) {
-    return <div>{isLoading ? 'Loading...' : 'Error while fetching data'}</div>;
+    return <div>
+        {isLoading ?
+          <Box sx={{ display: 'flex' }}>
+            <CircularProgress />
+          </Box> 
+          : 'Error while fetching data'}
+      </div>;
   }
 
   const { results, players, scorers } = data;
