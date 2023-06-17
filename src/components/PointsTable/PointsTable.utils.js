@@ -28,8 +28,8 @@ export const generatePointsTable = (result) => {
       };
     }
     teamsData[homeTeam].played += 1;
-    teamsData[homeTeam].goalFor += homeScore;
-    teamsData[homeTeam].goalAgainst += awayScore;
+    teamsData[homeTeam].goalFor += Number(homeScore);
+    teamsData[homeTeam].goalAgainst += Number(awayScore);
 
     // Updating away team's data
     if (!teamsData[awayTeam]) {
@@ -45,8 +45,8 @@ export const generatePointsTable = (result) => {
       };
     }
     teamsData[awayTeam].played += 1;
-    teamsData[awayTeam].goalFor += awayScore;
-    teamsData[awayTeam].goalAgainst += homeScore;
+    teamsData[awayTeam].goalFor += Number(awayScore);
+    teamsData[awayTeam].goalAgainst += Number(homeScore);
 
     // Determining the winner and updating points
     if (homeScore > awayScore) {
