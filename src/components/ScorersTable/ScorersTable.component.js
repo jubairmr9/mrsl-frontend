@@ -18,8 +18,8 @@ const ScorersTable = ({ scorers }) => {
         <TableHead>
           <TableRow>
             <StyledTableCell align="center">Name</StyledTableCell>
-            <StyledTableCell align="center">Games</StyledTableCell>
             <StyledTableCell align="center">Goals</StyledTableCell>
+            <StyledTableCell align="center">Games</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
