@@ -27,8 +27,8 @@ const ScorersTable = ({ scorers }) => {
             .map((scorer) => (
             <StyledTableRow key={scorer.id}>
               <StyledTableCell align="center">{scorer.name}</StyledTableCell>
-              <StyledTableCell align="center">{scorer.games}</StyledTableCell>
               <StyledTableCell align="center" sx={{ fontWeight: 'bold' }}>{scorer.goals}</StyledTableCell>
+              <StyledTableCell align="center">{scorer.games}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
