@@ -59,14 +59,6 @@ const HomeTabs = () => {
         <div>
           {results && <GringosSchedule results={results} />}
         </div>
-        <div style={{ paddingTop: '10px' }}>
-          <Typography variant="body1" style={{ fontStyle: "italic", fontWeight: "solid" }}>
-            ** Game is on a Wednesday - July 5th
-          </Typography>
-          <Typography variant="body1" style={{ fontStyle: "italic", fontWeight: "solid" }}>
-            ## Playoffs
-          </Typography>
-        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Container container spacing={2}>
