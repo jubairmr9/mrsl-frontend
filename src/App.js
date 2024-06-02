@@ -1,41 +1,42 @@
-import React from 'react';
-import { QueryClient, QueryClientProvider } from 'react-query'
-import Typography from '@mui/material/Typography';
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import { Box } from "@mui/material";
 
-import './App.css';
-
-import HomeTabs from './components/HomeTabs/HomeTabs.component';
+import Navigation from "./components/Navigation/Navigation.component";
+import Schedule from "./components/Schedule/Schedule.component";
+import LeagueTable from "./components/LeagueTable/LeagueTable.component";
+import AppFooter from "./components/AppFooter/AppFooter.component";
+import TeamStats from "./components/TeamStats/TeamStats.component";
 
 const App = () => {
-  const theme = useTheme();
-  const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
-  const matchesXS = useMediaQuery(theme.breakpoints.down('xs'));
-
-  const fontSize = matchesXS ? '2rem' : matchesSM ? '3rem' : '4rem';
-
-  const queryClient = new QueryClient();
-
   return (
-    <div className="App">
-    <Typography
-      variant="h1"
-      component="h1"
-      style={{
-        fontFamily: 'Inknut Antiqua',
-        textAlign: 'center',
-        color: '#1795A8',
-        fontSize: fontSize,
-        paddingTop: "10px"
-      }}>
-      Los Gringos - MRSL
-    </Typography>
-    <QueryClientProvider client={queryClient}>
-      <HomeTabs />
-    </QueryClientProvider>
-    </div>
+    <Router>
+      <Box
+        display="flex"
+        flexDirection="column"
+        minHeight="100vh"
+        sx={{
+          background: "#181818",
+        }}
+      >
+        <Navigation />
+        <Box component="main" flexGrow={1}>
+          <Routes>
+            <Route path="/" element={<Navigate replace to="/schedule" />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/table" element={<LeagueTable />} />
+            <Route path="/stats" element={<TeamStats />} />
+          </Routes>
+        </Box>
+        <AppFooter />
+      </Box>
+    </Router>
   );
-}
+};
 
 export default App;
