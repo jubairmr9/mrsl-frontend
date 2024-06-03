@@ -33,10 +33,14 @@ const Navigation = () => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, fontWeight: 700 }}>
         Los Gringos
       </Typography>
-      <Divider />
+      <Divider
+        sx={{
+          background: "white",
+        }}
+      />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
@@ -68,7 +72,8 @@ const Navigation = () => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, fontWeight: 700 }}
+            sx={{ flexGrow: 1, fontWeight: 700, cursor: "pointer" }}
+            onClick={() => handleNavigation("/schedule")}
           >
             Los Gringos
           </Typography>
@@ -94,7 +99,12 @@ const Navigation = () => {
         }}
         sx={{
           display: { xs: "block", sm: "none" },
-          "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+          "& .MuiDrawer-paper": {
+            boxSizing: "border-box",
+            width: drawerWidth,
+            backgroundColor: "#2f2f2f",
+            color: "white",
+          },
         }}
       >
         {drawer}
