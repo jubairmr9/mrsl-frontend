@@ -46,6 +46,9 @@ export const ScheduleCard = (data) => {
         {width > breakpoint && (
           <LocationNameDiv>{data.location}</LocationNameDiv>
         )}
+        {width < breakpoint && !data.winner && (
+          <LocationNameDiv>{data.location}</LocationNameDiv>
+        )}
       </ScheduleDiv>
       <GameDetailsModal isOpen={isModalOpen} onClose={closeModal} data={data} />
     </ScheduleCardContainer>

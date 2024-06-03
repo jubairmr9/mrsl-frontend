@@ -35,7 +35,15 @@ const GameDetailsModal = ({ isOpen, onClose, data }) => {
       aria-labelledby="game-details-modal-title"
       aria-describedby="game-details-modal-description"
     >
-      <Box sx={style}>
+      <Box
+        sx={{
+          ...style,
+          maxHeight: "65vh",
+          overflowY: "auto",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
         <IconButton
           onClick={onClose}
           sx={{
@@ -57,7 +65,20 @@ const GameDetailsModal = ({ isOpen, onClose, data }) => {
             color: "rgb(253, 253, 253)",
           }}
         >
-          {`${data.homeTeam} ${data.homeScore} - ${data.awayScore} ${data.awayTeam}`}
+          {data.winner
+            ? `${data.homeTeam} ${data.homeScore} - ${data.awayScore} ${data.awayTeam}`
+            : `${data.homeTeam} vs ${data.awayTeam}`}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            fontStyle: "italic",
+            textAlign: "center",
+            color: "white",
+          }}
+        >
+          {`@${data.location}`}
         </Typography>
 
         {data.winner && gameAttendance?.scorers.length > 0 && (
@@ -107,6 +128,7 @@ const GameDetailsModal = ({ isOpen, onClose, data }) => {
             display: "flex",
             justifyContent: "center",
             mt: 5,
+            mb: 2,
           }}
         >
           <Button
