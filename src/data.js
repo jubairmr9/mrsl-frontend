@@ -38,9 +38,9 @@ export const SCHEDULE_DATA = [
   {
     homeTeam: "Los Gringos",
     awayTeam: "Thicket Football Club",
-    winner: null,
-    homeScore: null,
-    awayScore: null,
+    winner: "away",
+    homeScore: 1,
+    awayScore: 3,
     time: "8:30 PM",
     date: "3 June, 2024",
     location: "Augsburg",
@@ -171,8 +171,11 @@ export const SCHEDULE_DATA = [
 
 export const GA_DATA = [
   { name: "Eduardo", goals: 1, assists: 1 },
+  { name: "Joel", goals: 0, assists: 1 },
   { name: "Brian C.", goals: 2, assists: 1 },
   { name: "Adam", goals: 1, assists: 0 },
+  { name: "Mahmoud", goals: 1, assists: 0 },
+  { name: "Carlos", goals: 0, assists: 1 },
 ];
 
 export const ATTENDANCE_DATA = [
@@ -221,7 +224,7 @@ export const ATTENDANCE_DATA = [
       "Pilo",
       "Tanner",
     ],
-    scorers: ["⚽ Eduardo", "⚽ Brian C. 🎯 Brian M."],
+    scorers: ["⚽ Eduardo 🎯 Joel", "⚽ Brian C. 🎯 Brian M."],
     game: 2,
   },
   {
@@ -245,8 +248,28 @@ export const ATTENDANCE_DATA = [
     game: 3,
   },
   {
-    attendees: [],
-    scorers: [],
+    attendees: [
+      "Andres",
+      "Adam",
+      "Dario",
+      "Jubair (questionable)",
+      "Joel",
+      "Brian",
+      "Carlos",
+      "Joel",
+      "Ernesto",
+      "Eduardo",
+      "Tanner forward",
+      "Briancito",
+      "Andy T",
+      "Pilo",
+      "Luis",
+      "Jeff",
+      "Marvin",
+      "Mahmoud",
+      "Fidel",
+    ],
+    scorers: ["⚽ Mahmoud 🎯 Carlos"],
     game: 4,
   },
   {
