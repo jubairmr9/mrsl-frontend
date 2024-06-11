@@ -160,7 +160,7 @@ export const GA_DATA = [
   { name: "Joel", goals: 0, assists: 1 },
   { name: "Brian C.", goals: 2, assists: 1 },
   { name: "Adam", goals: 1, assists: 0 },
-  { name: "Mahmoud", goals: 1, assists: 0 },
+  { name: "Mahmoud", goals: 2, assists: 1 },
   { name: "Carlos", goals: 0, assists: 1 },
   { name: "Marvin", goals: 2, assists: 1 },
   { name: "Jubair", goals: 0, assists: 1 },
