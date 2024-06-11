@@ -8,7 +8,6 @@ export const SCHEDULE_DATA = [
     time: "6:30 PM",
     date: "6 May, 2024",
     location: "Augsburg",
-    scorers: [],
     game: 1,
   },
   {
@@ -20,7 +19,6 @@ export const SCHEDULE_DATA = [
     time: "8:30 PM",
     date: "20 May, 2024",
     location: "Augsburg",
-    scorers: [],
     game: 2,
   },
   {
@@ -32,7 +30,6 @@ export const SCHEDULE_DATA = [
     time: "6:30 PM",
     date: "28 May, 2024",
     location: "UofM - Cleveland & Larpenteur",
-    scorers: [],
     game: 3,
   },
   {
@@ -44,19 +41,17 @@ export const SCHEDULE_DATA = [
     time: "8:30 PM",
     date: "3 June, 2024",
     location: "Augsburg",
-    scorers: [],
     game: 4,
   },
   {
     homeTeam: "Los Gringos",
     awayTeam: "Rapacki + Co CPAs",
-    winner: null,
-    homeScore: null,
-    awayScore: null,
+    winner: "home",
+    homeScore: 4,
+    awayScore: 1,
     time: "6:30 PM",
     date: "10 June, 2024",
     location: "Augsburg",
-    scorers: [],
     game: 5,
   },
   {
@@ -68,7 +63,6 @@ export const SCHEDULE_DATA = [
     time: "8:30 PM",
     date: "17 June, 2024",
     location: "Dred Scott - East",
-    scorers: [],
     game: 6,
   },
   {
@@ -80,7 +74,6 @@ export const SCHEDULE_DATA = [
     time: "6:30 PM",
     date: "24 June, 2024",
     location: "UofM - Cleveland & Larpenteur - Field A (West)",
-    scorers: [],
     game: 7,
   },
   {
@@ -92,7 +85,6 @@ export const SCHEDULE_DATA = [
     time: "8:30 PM",
     date: "1 July, 2024",
     location: "Augsburg",
-    scorers: [],
     game: 8,
   },
   {
@@ -104,7 +96,6 @@ export const SCHEDULE_DATA = [
     time: "6:30 PM",
     date: "8 July, 2024",
     location: "Eden Prairie HS",
-    scorers: [],
     game: 9,
   },
   {
@@ -116,7 +107,6 @@ export const SCHEDULE_DATA = [
     time: "6:30 PM",
     date: "15 July, 2024",
     location: "Woodbury Fields",
-    scorers: [],
     game: 10,
   },
   {
@@ -128,7 +118,6 @@ export const SCHEDULE_DATA = [
     time: "6:30 PM",
     date: "22 July, 2024",
     location: "Dred Scott - East",
-    scorers: [],
     game: 11,
   },
   {
@@ -140,7 +129,6 @@ export const SCHEDULE_DATA = [
     time: "6:30 PM",
     date: "29 July, 2024",
     location: "UofM - Cleveland & Larpenteur - Field A (West)",
-    scorers: [],
     game: 12,
   },
   {
@@ -152,7 +140,6 @@ export const SCHEDULE_DATA = [
     time: "8:30 PM",
     date: "5 August, 2024",
     location: "Augsburg",
-    scorers: [],
     game: 13,
   },
   {
@@ -164,18 +151,19 @@ export const SCHEDULE_DATA = [
     time: "6:30 PM",
     date: "12 August, 2024",
     location: "McMurray - East",
-    scorers: [],
     game: 14,
   },
 ];
 
 export const GA_DATA = [
-  { name: "Eduardo", goals: 1, assists: 1 },
+  { name: "Eduardo", goals: 2, assists: 3 },
   { name: "Joel", goals: 0, assists: 1 },
   { name: "Brian C.", goals: 2, assists: 1 },
   { name: "Adam", goals: 1, assists: 0 },
   { name: "Mahmoud", goals: 1, assists: 0 },
   { name: "Carlos", goals: 0, assists: 1 },
+  { name: "Marvin", goals: 2, assists: 1 },
+  { name: "Jubair", goals: 0, assists: 1 },
 ];
 
 export const ATTENDANCE_DATA = [
@@ -252,15 +240,15 @@ export const ATTENDANCE_DATA = [
       "Andres",
       "Adam",
       "Dario",
-      "Jubair (questionable)",
+      "Jubair",
       "Joel",
-      "Brian",
+      "Brian C.",
       "Carlos",
       "Joel",
       "Ernesto",
       "Eduardo",
-      "Tanner forward",
-      "Briancito",
+      "Tanner",
+      "Brian M.",
       "Andy T",
       "Pilo",
       "Luis",
@@ -273,8 +261,30 @@ export const ATTENDANCE_DATA = [
     game: 4,
   },
   {
-    attendees: [],
-    scorers: [],
+    attendees: [
+      "Andres",
+      "Christian",
+      "Adam",
+      "Brian C.",
+      "Mahmoud",
+      "Brian M.",
+      "Tanner",
+      "Joel",
+      "Pilo",
+      "Craig",
+      "Colin",
+      "Jubair",
+      "Luis",
+      "Eduardo",
+      "Marvin",
+      "Jeff",
+    ],
+    scorers: [
+      "⚽ Mahmoud 🎯 Eduardo",
+      "⚽ Marvin 🎯 Mahmoud",
+      "⚽ Marvin 🎯 Eduardo",
+      "⚽ Eduardo 🎯 Jubair",
+    ],
     game: 5,
   },
   {
