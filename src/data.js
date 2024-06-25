@@ -68,9 +68,9 @@ export const SCHEDULE_DATA = [
   {
     homeTeam: "JAWA FC",
     awayTeam: "Los Gringos",
-    winner: null,
-    homeScore: null,
-    awayScore: null,
+    winner: "tie",
+    homeScore: 3,
+    awayScore: 3,
     time: "6:30 PM",
     date: "24 June, 2024",
     location: "UofM - Cleveland & Larpenteur - Field A (West)",
@@ -156,14 +156,15 @@ export const SCHEDULE_DATA = [
 ];
 
 export const GA_DATA = [
-  { name: "Eduardo", goals: 2, assists: 3 },
+  { name: "Eduardo", goals: 2, assists: 4 },
   { name: "Joel", goals: 0, assists: 1 },
   { name: "Brian C.", goals: 2, assists: 1 },
   { name: "Adam", goals: 1, assists: 0 },
-  { name: "Mahmoud", goals: 2, assists: 1 },
-  { name: "Carlos", goals: 0, assists: 1 },
+  { name: "Mahmoud", goals: 2, assists: 2 },
+  { name: "Carlos", goals: 1, assists: 1 },
   { name: "Marvin", goals: 2, assists: 1 },
-  { name: "Jubair", goals: 0, assists: 1 },
+  { name: "Jubair", goals: 1, assists: 1 },
+  { name: "Dario", goals: 1, assists: 0 },
 ];
 
 export const ATTENDANCE_DATA = [
@@ -293,8 +294,26 @@ export const ATTENDANCE_DATA = [
     game: 6,
   },
   {
-    attendees: [],
-    scorers: [],
+    attendees: [
+      "Andres",
+      "Carlos",
+      "Adam",
+      "Jubair",
+      "Brian",
+      "Mahmoud",
+      "Joel",
+      "Jeff",
+      "Tanner",
+      "Pilo",
+      "Fidel",
+      "Craig",
+      "Luis",
+      "Eduardo",
+      "Andy T",
+      "Dario",
+      "Marvin",
+    ],
+    scorers: ["⚽ Dario 🎯 Eduardo", "⚽ Carlos 🥅", "⚽ Jubair 🎯 Mahmoud"],
     game: 7,
   },
   {
