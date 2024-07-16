@@ -99,8 +99,8 @@ export const SCHEDULE_DATA = [
     game: 9,
   },
   {
-    homeTeam: "Los Gringos",
-    awayTeam: "Rapacki + Co CPAs",
+    homeTeam: "Rapacki + Co CPAs",
+    awayTeam: "Los Gringos",
     winner: "home",
     homeScore: 5,
     awayScore: 2,
