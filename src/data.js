@@ -101,9 +101,9 @@ export const SCHEDULE_DATA = [
   {
     homeTeam: "Los Gringos",
     awayTeam: "Rapacki + Co CPAs",
-    winner: null,
-    homeScore: null,
-    awayScore: null,
+    winner: "home",
+    homeScore: 5,
+    awayScore: 2,
     time: "6:30 PM",
     date: "15 July, 2024",
     location: "Woodbury Fields",
@@ -165,6 +165,7 @@ export const GA_DATA = [
   { name: "Marvin", goals: 3, assists: 1 },
   { name: "Jubair", goals: 1, assists: 1 },
   { name: "Dario", goals: 1, assists: 0 },
+  { name: "Michael", goals: 1, assists: 0 },
 ];
 
 export const ATTENDANCE_DATA = [
@@ -363,8 +364,22 @@ export const ATTENDANCE_DATA = [
     game: 9,
   },
   {
-    attendees: [],
-    scorers: [],
+    attendees: [
+      "Andres",
+      "Jubair",
+      "Brian C.",
+      "Eduardo",
+      "Jeff",
+      "Adam",
+      "Brian M.",
+      "Pilo",
+      "Marvin",
+      "Tanner",
+      "Ernesto",
+      "Andy T.",
+      "Michael",
+    ],
+    scorers: ["⚽ Marvin 🎯 Adam", "⚽ Michael"],
     game: 10,
   },
   {
