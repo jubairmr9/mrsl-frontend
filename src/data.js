@@ -134,9 +134,9 @@ export const SCHEDULE_DATA = [
   {
     homeTeam: "Los Gringos",
     awayTeam: "The Storm",
-    winner: null,
-    homeScore: null,
-    awayScore: null,
+    winner: "tie",
+    homeScore: 2,
+    awayScore: 2,
     time: "8:30 PM",
     date: "5 August, 2024",
     location: "Augsburg",
@@ -156,18 +156,19 @@ export const SCHEDULE_DATA = [
 ];
 
 export const GA_DATA = [
-  { name: "Eduardo", goals: 3, assists: 7 },
+  { name: "Eduardo", goals: 5, assists: 7 },
   { name: "Joel", goals: 0, assists: 1 },
   { name: "Brian C.", goals: 3, assists: 1 },
   { name: "Brian M.", goals: 0, assists: 1 },
   { name: "Adam", goals: 1, assists: 0 },
   { name: "Mahmoud", goals: 5, assists: 4 },
   { name: "Carlos", goals: 2, assists: 1 },
-  { name: "Marvin", goals: 4, assists: 1 },
+  { name: "Marvin", goals: 4, assists: 2 },
   { name: "Jubair", goals: 1, assists: 1 },
   { name: "Dario", goals: 1, assists: 0 },
   { name: "Michel", goals: 1, assists: 0 },
   { name: "Ernesto", goals: 1, assists: 0 },
+  { name: "Colin", goals: 0, assists: 1 },
 ];
 
 export const ATTENDANCE_DATA = [
@@ -427,8 +428,24 @@ export const ATTENDANCE_DATA = [
     game: 12,
   },
   {
-    attendees: [],
-    scorers: [],
+    attendees: [
+      "Andres",
+      "Ernesto",
+      "Jubair",
+      "Adam",
+      "Colin",
+      "Jeff",
+      "Mahmoud",
+      "Christian",
+      "Dario",
+      "Eduardo",
+      "Marvin",
+      "Tanner",
+      "Luis",
+      "Pilo",
+      "Andy T.",
+    ],
+    scorers: ["⚽ Eduardo 🎯 Marvin", "⚽ Eduardo 🎯 Colin"],
     game: 13,
   },
   {
