@@ -307,7 +307,7 @@ export const ATTENDANCE_DATA = [
       "Marvin",
       "Eduardo",
       "Michel",
-      "Andy T",
+      "Andy T.",
       "Noah",
     ],
     scorers: [],
