@@ -61,7 +61,7 @@ export const SCHEDULE_DATA = [
     homeScore: 6,
     awayScore: 0,
     time: "8:30 PM",
-    date: "5 August, 2024 (Rescheduled)",
+    date: "8 August, 2024 (Rescheduled)",
     location: "Dred Scott - East",
     game: 6,
   },
