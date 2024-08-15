@@ -145,9 +145,9 @@ export const SCHEDULE_DATA = [
   {
     homeTeam: "Thicket Football Club",
     awayTeam: "Los Gringos",
-    winner: null,
-    homeScore: null,
-    awayScore: null,
+    winner: "away",
+    homeScore: 2,
+    awayScore: 3,
     time: "6:30 PM",
     date: "12 August, 2024",
     location: "McMurray - East",
@@ -156,19 +156,20 @@ export const SCHEDULE_DATA = [
 ];
 
 export const GA_DATA = [
-  { name: "Eduardo", goals: 5, assists: 7 },
+  { name: "Eduardo", goals: 5, assists: 9 },
   { name: "Joel", goals: 0, assists: 1 },
   { name: "Brian C.", goals: 3, assists: 1 },
   { name: "Brian M.", goals: 0, assists: 1 },
   { name: "Adam", goals: 1, assists: 0 },
-  { name: "Mahmoud", goals: 5, assists: 4 },
+  { name: "Mahmoud", goals: 6, assists: 4 },
   { name: "Carlos", goals: 2, assists: 1 },
-  { name: "Marvin", goals: 4, assists: 2 },
+  { name: "Marvin", goals: 4, assists: 3 },
   { name: "Jubair", goals: 1, assists: 1 },
   { name: "Dario", goals: 1, assists: 0 },
   { name: "Michel", goals: 1, assists: 0 },
   { name: "Ernesto", goals: 1, assists: 0 },
   { name: "Colin", goals: 0, assists: 1 },
+  { name: "Noah", goals: 2, assists: 0 },
 ];
 
 export const ATTENDANCE_DATA = [
@@ -465,8 +466,25 @@ export const ATTENDANCE_DATA = [
     game: 13,
   },
   {
-    attendees: [],
-    scorers: [],
+    attendees: [
+      "Andres",
+      "Jubair",
+      "Adam",
+      "Christian",
+      "Mahmoud",
+      "Pilo",
+      "Ernesto",
+      "Carlos",
+      "Andy T.",
+      "Noah",
+      "Marvin",
+      "Eduardo",
+    ],
+    scorers: [
+      "⚽ Noah 🎯 Marvin",
+      "⚽ Noah 🎯 Eduardo",
+      "⚽ Mahmoud 🎯 Eduardo",
+    ],
     game: 14,
   },
 ];
