@@ -153,6 +153,17 @@ export const SCHEDULE_DATA = [
     location: "McMurray - East",
     game: 14,
   },
+  {
+    homeTeam: "Minnesota Axmen",
+    awayTeam: "Los Gringos",
+    winner: null,
+    homeScore: null,
+    awayScore: null,
+    time: "6:00 PM",
+    date: "18 August, 2024",
+    location: "Eden Prairie HS Turf B",
+    game: 15,
+  },
 ];
 
 export const GA_DATA = [
@@ -486,5 +497,10 @@ export const ATTENDANCE_DATA = [
       "⚽ Mahmoud 🎯 Eduardo",
     ],
     game: 14,
+  },
+  {
+    attendees: [],
+    scorers: [],
+    game: 15,
   },
 ];
